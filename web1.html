@@ -1,0 +1,109 @@
+<html>
+	
+	<head>
+		<title>First web page</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+		
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<style type="text/css">
+		p{
+			color: red;
+            font-size: 50px;
+            font-family: sans-serif;
+            text-align: center;
+			}
+			body
+            {
+				background-image: url(image3.jpeg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+
+			}
+			button{
+				font-size: 20px;
+				width: 150px;
+				margin: 20px;
+				float: left;
+			}
+			ul{
+				float:left;
+				list-style-type: none;
+				
+			}
+			ul li{
+				float: left;
+				width: 70px;
+				margin: 0px;
+				padding: 10px;
+				background-position: center;
+				display: block;
+				overflow: hidden;
+			}
+			.menu
+			{
+				background-color: pink;
+				height: 50px;
+			}
+			.form
+			{
+				background-color: blue;
+				height: 100px;
+			}
+			input{
+				float: right;
+				margin: 10px;
+				width: 300px;
+			}
+			span{
+				float: right;
+			}
+		</style>
+		<SCRIPT TYPE="text/javascript">
+		$(document).ready(function(){
+			
+		$("#demo").click(function()
+		{
+		   $("p").show();
+		});
+		$("#demo1").click(function()
+		{
+			$("p").hide();
+		});
+	});
+
+
+		</SCRIPT>
+	</head>
+	<body>
+		
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<input type="text" name="Search" placeholder="Search"><a><span class="glyphicon glyphicon-search"></span></a></input>
+			
+		</div>
+		<br><br>
+
+		<p>Hello everyone</p>	
+		<br><br>
+
+
+		<div>
+			<button id="demo">Show</button>
+			<button id="demo1">Hide</button>
+		</div>
+		<!--<div class="form">
+			<form method="POST">
+				Username: <input type="text" id="name">
+				Password: <input type="password" id="password">
+			</form>
+		</div>-->
+		
+
+	</body>
+</html>
